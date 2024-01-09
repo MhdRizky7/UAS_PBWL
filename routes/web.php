@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PelangganController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\TransaksiController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 /*
 |--------------------------------------------------------------------------
@@ -44,6 +46,23 @@ Route::get('/pelanggan/{id}/edit', [App\Http\Controllers\PelangganController::cl
 Route::patch('/pelanggan/{id}', [App\Http\Controllers\PelangganController::class, 'update']);
 Route::delete('/pelanggan/{id}', [App\Http\Controllers\PelangganController::class, 'destroy']);
 Route::get('/pelanggan/{id}', [App\Http\Controllers\PelangganController::class, 'show']);
+
+Route::get('/produk', [ProdukController::class, 'index']);
+Route::get('/produk/create', [ProdukController::class, 'create']);
+Route::post('/produk', [ProdukController::class, 'store']);
+Route::get('/produk/{id}/edit', [ProdukController::class, 'edit']);
+Route::patch('/produk/{id}', [ProdukController::class, 'update']);
+Route::delete('/produk/{id}', [ProdukController::class, 'destroy']);
+Route::get('/produk/{id}', [ProdukController::class, 'show']); 
+
+Route::get('/transaksi', [TransaksiController::class, 'index']);
+Route::get('/transaksi/create', [TransaksiController::class, 'create']);
+Route::post('/transaksi', [TransaksiController::class, 'store']);
+Route::get('/transaksi/{id}/edit', [TransaksiController::class, 'edit']);
+Route::put('/transaksi/{id}', [TransaksiController::class, 'update']);
+Route::delete('/transaksi/{id}', [TransaksiController::class, 'destroy']);
+Route::get('/transaksi/{id}', [TransaksiController::class, 'show']);
+
 
 
 

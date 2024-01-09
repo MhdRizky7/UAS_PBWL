@@ -6,11 +6,15 @@
     <div class="container">
         <h1>Detail Golongan</h1>
 
-        <p><strong>ID:</strong> {{ $row->gol_id }}</p>
-        <p><strong>Kode:</strong> {{ $row->gol_kode }}</p>
-        <p><strong>Nama:</strong> {{ $row->gol_nama }}</p>
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5 class="card-title">ID: {{ $row->gol_id }}</h5>
+                <p class="card-text">Kode: {{ $row->gol_kode }}</p>
+                <p class="card-text">Nama: {{ $row->gol_nama }}</p>
+            </div>
+        </div>
 
         <!-- Tambahkan tombol untuk kembali ke halaman sebelumnya -->
-        <a href="{{ url('/golongan') }}" class="btn btn-primary">Kembali</a>
+        <a href="{{ url('/golongan') }}" class="btn btn-primary mt-3">Kembali</a>
     </div>
 @endsection

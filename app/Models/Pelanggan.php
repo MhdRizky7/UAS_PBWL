@@ -21,7 +21,6 @@ protected $fillable = [
     'pel_hp',
     'pel_ktp',
     'pel_seri',
-    'pel_meteran',
     'pel_aktif',
     'pel_id_user',
 ];

@@ -22,8 +22,7 @@ return new class extends Migration
         $table->string('pel_hp', 20);
         $table->string('pel_ktp', 50);
         $table->string('pel_seri', 50);
-        $table->integer('pel_meteran');
-        $table->enum('pel_aktif', ['Y', 'N']);
+        $table->enum('pel_aktif', 50);
         $table->bigInteger('pel_id_user');
         $table->timestamps();
         $table->softDeletes();

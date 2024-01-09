@@ -61,7 +61,6 @@ public function store(Request $request)
         'pel_hp' => $request-> pel_hp,
         'pel_ktp' => $request-> pel_ktp,
         'pel_seri' => $request-> pel_seri,
-        'pel_meteran' => $request-> pel_meteran,
         'pel_aktif' => $request-> pel_aktif,
         'pel_id_user' => $request -> pel_id_user,
     ]);
@@ -114,7 +113,6 @@ $row->update([
         'pel_hp' => $request-> pel_hp,
         'pel_ktp' => $request-> pel_ktp,
         'pel_seri' => $request-> pel_seri,
-        'pel_meteran' => $request-> pel_meteran,
         'pel_aktif' => $request-> pel_aktif,
 ]);
 

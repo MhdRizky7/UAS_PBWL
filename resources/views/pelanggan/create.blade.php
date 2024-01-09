@@ -47,10 +47,6 @@
                 <input type="text" class="form-control" id="pel_seri" name="pel_seri" required>
             </div>
 
-            <div class="mb-3">
-                <label for="pel_meteran" class="form-label">Meteran</label>
-                <input type="text" class="form-control" id="pel_meteran" name="pel_meteran" required>
-            </div>
 
             <div class="mb-3">
                 <label for="pel_aktif" class="form-label">Status</label>

@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
     
     <!-- Title of site -->
-    <title>Quiz Laravel</title>
+    <title>UAS PBWL</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="{{ asset('frontend/logo/favicon.png') }}">
@@ -109,9 +109,9 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <div class="header-text">
-                            <h2>hi <span>,</span> Welcome <br> to Laravel <br> HomePage <span>.</span>   </h2>
-                            <p>Muhammad Rizky Wibowo</p>
-                           <a href="https://github.com/MhdRizky7" target="_blank">GitHub</a>
+                            <h2>hi <span>,</span> Welcome <br> to Your  <br> Fashion Destination <span>.</span>   </h2>
+                            <p> Fashion Fusionary</p>
+                           <a href="https://github.com/MhdRizky7" target="_blank">Order Now</a>
                         </div><!--/.header-text-->
                     </div><!--/.col-->
                 </div><!-- /.row-->
@@ -122,7 +122,7 @@
         <!-- Contact start -->
         <section id="contact" class="contact">
             <div class="section-heading text-center">
-                <h2>About Me</h2>
+                <h2>Create By</h2>
 			</div>
 			<div class="container">
 				<div class="contact-content">
@@ -212,7 +212,7 @@
             <div class="container">
                 <div class="hm-footer-copyright text-center">
                     <p>
-                        &copy; copyright MRW. Design and developed by Muhammad Rizky Wibowo <a href="https://github.com/MhdRizky7/Quiz_PBWL.git">MRIZW</a>
+                        &copy; copyright MRW. Design and developed by Muhammad Rizky Wibowo <a href="https://github.com/MhdRizky7/UAS_PBWL.git">MRIZW</a>
                     </p><!--/p-->
                 </div><!--/.text-center-->
             </div><!--/.container-->

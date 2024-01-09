@@ -14,10 +14,8 @@
                     <th>Alamat</th>
                     <th>No HP</th>
                     <th>KTP</th>
-                    <th>Seri</th>
-                    <th>Meteran</th>
+                    <th>Kode Pesanan</th>
                     <th>Status</th>
-                    <th>Id User</th>
                      <th>Detail</th>
                     <th>Edit</th>
                     <th>Hapus</th>
@@ -34,9 +32,7 @@
                         <td>{{ $row->pel_hp }}</td>
                         <td>{{ $row->pel_ktp }}</td>
                         <td>{{ $row->pel_seri }}</td>
-                        <td>{{ $row->pel_meteran }}</td>
                         <td>{{ $row->pel_aktif }}</td>
-                        <td>{{ $row->pel_id_user }}</td> 
 <td>
     <a href="{{ url('pelanggan/'.$row->pel_id) }}" class="btn btn-sm btn-info">View</a>
 </td>
@@ -101,22 +97,16 @@
             </div>
 
             <div class="mb-3">
-                <label for="pel_seri" class="form-label">Seri</label>
+                <label for="pel_seri" class="form-label">Kode Pesanan</label>
                 <input type="text" class="form-control" id="pel_seri" name="pel_seri" required>
             </div>
 
-            <div class="mb-3">
-                <label for="pel_meteran" class="form-label">Meteran</label>
-                <input type="text" class="form-control" id="pel_meteran" name="pel_meteran" required>
-            </div>
 
-                        <div class="mb-3">
-                            <label for="pel_aktif" class="form-label">Status</label>
-                            <select name="pel_aktif" id="pel_aktif" class="form-control">
-                                <option value="Y">Aktif</option>
-                                <option value="N">NonAktif</option>
-                            </select>
-                        </div>
+<div class="mb-3">
+    <label for="pel_aktif" class="form-label">Status</label>
+    <input type="text" class="form-control" id="pel_aktif" name="pel_aktif" value="Aktif" required>
+</div>
+
 
                         <button type="submit" class="btn btn-primary">Simpan</button>
                     </form>
@@ -175,22 +165,15 @@
             </div>
 
             <div class="mb-3">
-                <label for="pel_seri" class="form-label">Seri</label>
+                <label for="pel_seri" class="form-label">Kode Pesanan</label>
                 <input type="text" class="form-control" id="pel_seri" name="pel_seri" value="{{ $row->pel_seri }}" required>
             </div>
 
-            <div class="mb-3">
-                <label for="pel_meteran" class="form-label">Meteran</label>
-                <input type="text" class="form-control" id="pel_meteran" name="pel_meteran" value="{{ $row->pel_meteran }}" required>
-            </div>
+ <div class="mb-3">
+    <label for="edit_pel_aktif" class="form-label">Status</label>
+    <input type="text" class="form-control" id="edit_pel_aktif" name="pel_aktif" value="{{ $row->pel_aktif }}" required>
+</div>
 
-                                <div class="mb-3">
-                                    <label for="edit_pel_aktif" class="form-label">Status</label>
-                                    <select name="pel_aktif" id="edit_pel_aktif" class="form-control">
-                                        <option value="Y" {{ $row->pel_aktif == 'Y' ? 'selected' : '' }}>Aktif</option>
-                                        <option value="N" {{ $row->pel_aktif == 'N' ? 'selected' : '' }}>NonAktif</option>
-                                    </select>
-                                </div>
 
                                 <button type="submit" class="btn btn-primary">Update</button>
                             </form>
